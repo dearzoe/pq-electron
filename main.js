@@ -17,7 +17,9 @@ function createWindow () {
     win = new BrowserWindow({
         title: ' ',
         width: 1200,
+        minWidth: 1200,
         height: 900,
+        minHeight: 800,
         backgroundColor: 'white', // 预加载一个白色背景
         icon: path.join(__dirname, './pq.ico'),
         webPreferences: {
