@@ -97,34 +97,8 @@ app.on('ready', () => {
             label: '粘贴',
             accelerator: "CmdOrCtrl+V",
             selector: "paste:",
-            // submenu: [
-            //     { label: "Copy", accelerator: "CmdOrCtrl+C", selector: "copy:" },
-            //     { label: "Paste", accelerator: "CmdOrCtrl+V", selector: "paste:" },
-            // ]
-            // click: function (e) {
-            //     console.log('%ce', 'color:#1782b6;', e);
-            //     clipboard.writeText('hello i am a bit of text!', 'copy:')
-            //     const text = clipboard.readText()
-            //     console.log(`text${text}1231231`)
-            // }
         })
     )
-    // const template = [
-    //     {
-    //         label: "Application",
-    //         submenu: [
-    //             { label: "Quit", accelerator: "Command+Q", click: function() { app.quit(); }}
-    //         ]
-    //     },
-    //     {
-    //         label: "Edit",
-    //         submenu: [
-    //             { label: "Copy", accelerator: "CmdOrCtrl+C", selector: "copy:" },
-    //             { label: "Paste", accelerator: "CmdOrCtrl+V", selector: "paste:" },
-    //         ]
-    //     }
-    // ];
-    // Menu.setApplicationMenu(Menu.buildFromTemplate(template))
 });
 
 ipcMain.on('show-context-menu', function(event) {
