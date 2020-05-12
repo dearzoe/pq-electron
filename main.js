@@ -19,7 +19,7 @@ function createWindow () {
         width: 1200,
         minWidth: 1200,
         height: 900,
-        minHeight: 800,
+        minHeight: 600,
         backgroundColor: 'white', // 预加载一个白色背景
         icon: path.join(__dirname, './pq.ico'),
         webPreferences: {
@@ -74,7 +74,7 @@ app.on('browser-window-created', function(event, win) {
 })
 
 app.on('ready', () => {
-    globalShortcut.register('CmdOrCtrl+Alt+Shift+F12', () => {
+    globalShortcut.register('CmdOrCtrl+F12', () => {
         win.webContents.openDevTools()
     })
     menu.append(
